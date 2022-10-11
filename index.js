@@ -1,9 +1,10 @@
 const MongoClient = require('mongodb').MongoClient;
 const dboper = require('./operations');
 
-const uri = 'mongodb://localhost:27017/';
+const uri = 'mongodb://127.0.0.1:27017/';
 const dbname = 'nucampsite';
 
+console.log("Connection Test")
 MongoClient.connect(uri, { useUnifiedTopology: true }).then(client => {
 
     console.log('Connected correctly to server');
